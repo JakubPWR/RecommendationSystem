@@ -80,3 +80,11 @@ CMakeLists.txt.user*
 .rcc/
 .uic/
 /build*/
+.vs/
+debug/
+release/
+*.user
+*.qtvscr
+*.db
+*.json
+
