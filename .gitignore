@@ -22,7 +22,7 @@ core
 tags
 .DS_Store
 .directory
-*.debug
+*.debug 
 Makefile*
 *.prl
 *.app
@@ -35,10 +35,6 @@ Thumbs.db
 /.qmake.cache
 /.qmake.stash
 
-# qtcreator generated files
-*.pro.user*
-*.qbs.user*
-CMakeLists.txt.user*
 
 # xemacs temporary files
 *.flc
@@ -79,7 +75,6 @@ CMakeLists.txt.user*
 .pch/
 .rcc/
 .uic/
-/build*/
 .vs/
 debug/
 release/

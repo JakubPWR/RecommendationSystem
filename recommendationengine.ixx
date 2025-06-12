@@ -10,6 +10,7 @@ import <QtMath>;
 import <QRegularExpression>;
 import <QDebug>;
 import <algorithm>;
+import <concepts>
 
 export struct MovieWithScore {
     QString title;
@@ -95,7 +96,14 @@ QMap<QString, int> RecommendationEngine::textToVector(const QString& text) {
     return freq;
 }
 
-float RecommendationEngine::cosineSimilarity(const QMap<QString, int>& v1, const QMap<QString, int>& v2) {
+template <typename Map>
+concept WordFrequencyMap = requires(Map m, typename Map::key_type key) {
+    { m.value(key, 0) } -> std::convertible_to<int>;
+    { m.keys() } -> std::convertible_to<QList<typename Map::key_type>>;
+};
+
+template <WordFrequencyMap MapType>
+float RecommendationEngine::cosineSimilarity(const MapType& v1, const MapType& v2) {
     QSet<QString> allWords = QSet<QString>::fromList(v1.keys()) | QSet<QString>::fromList(v2.keys());
 
     float dot = 0, normA = 0, normB = 0;
