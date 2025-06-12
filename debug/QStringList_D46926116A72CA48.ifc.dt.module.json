@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QStringList.obj",
+            "outputs": [
+                "debug\\QStringList_D46926116A72CA48.ifc.dt.module.json",
+                "debug\\QStringList_D46926116A72CA48.ifc.dt.d.json",
+                "debug\\QStringList.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QStringList",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qstringlist",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

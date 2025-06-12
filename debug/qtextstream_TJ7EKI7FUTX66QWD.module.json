@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qtextstream_TJ7EKI7FUTX66QWD.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qtextstream_TJ7EKI7FUTX66QWD.module.json",
+                "debug\\qtextstream_TJ7EKI7FUTX66QWD.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qtextstream",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qtextstream",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

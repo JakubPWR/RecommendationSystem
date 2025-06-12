@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QTextStream.obj",
+            "outputs": [
+                "debug\\QTextStream_D5A977D74A4BE286.ifc.dt.module.json",
+                "debug\\QTextStream_D5A977D74A4BE286.ifc.dt.d.json",
+                "debug\\QTextStream.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QTextStream",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qtextstream",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

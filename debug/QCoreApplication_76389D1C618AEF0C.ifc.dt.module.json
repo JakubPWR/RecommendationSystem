@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QCoreApplication.obj",
+            "outputs": [
+                "debug\\QCoreApplication_76389D1C618AEF0C.ifc.dt.module.json",
+                "debug\\QCoreApplication_76389D1C618AEF0C.ifc.dt.d.json",
+                "debug\\QCoreApplication.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QCoreApplication",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qcoreapplication",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+﻿   Qt/MSBuild: 3.4.0.1
+  Reading Qt configuration (C:/Qt/6.9.0/msvc2022_64/bin/qmake)
+   Qt: 6.9.0
+  Trwa skanowanie źródeł pod kątem zależności modułów...
+  Trwa kompilowanie…
+  logger.ixx
+  recommendationengine.ixx
+logger.ixx(3,17): fatal  error C1001: Wewnętrzny błąd kompilatora.
+  (plik kompilatora „msc1.cpp”, wiersz 1533)
+   Aby obejść ten problem, spróbuj uprościć lub zmienić program w pobliżu miejsc wymienionych na liście powyżej.
+  Jeśli to możliwe, podaj kroki umożliwiające odtworzenie na stronie https://developercommunity.visualstudio.com
+  Wybierz polecenie Pomoc techniczna w menu Pomoc
+   Visual C++ lub otwórz plik pomocy technicznej, aby uzyskać więcej informacji
+  Wewnętrzny błąd kompilatora w "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe"
+      Wybierz polecenie Pomoc techniczna w Visual C++
+      menu Pomoc lub otwórz plik pomocy technicznej aby uzyskać więcej informacji
+recommendationengine.ixx(3,17): fatal  error C1001: Wewnętrzny błąd kompilatora.
+  (plik kompilatora „msc1.cpp”, wiersz 1533)
+   Aby obejść ten problem, spróbuj uprościć lub zmienić program w pobliżu miejsc wymienionych na liście powyżej.
+  Jeśli to możliwe, podaj kroki umożliwiające odtworzenie na stronie https://developercommunity.visualstudio.com
+  Wybierz polecenie Pomoc techniczna w menu Pomoc
+   Visual C++ lub otwórz plik pomocy technicznej, aby uzyskać więcej informacji
+  Wewnętrzny błąd kompilatora w "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe"
+      Wybierz polecenie Pomoc techniczna w Visual C++
+      menu Pomoc lub otwórz plik pomocy technicznej aby uzyskać więcej informacji

@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qset_OVDTP3ZEPDRL4388.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qset_OVDTP3ZEPDRL4388.module.json",
+                "debug\\qset_OVDTP3ZEPDRL4388.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qset",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qset",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

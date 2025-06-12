@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qsqlrecord_J19LY1NA6S2BITY6.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qsqlrecord_J19LY1NA6S2BITY6.module.json",
+                "debug\\qsqlrecord_J19LY1NA6S2BITY6.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtsql\\qsqlrecord",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtsql\\qsqlrecord",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QString.obj",
+            "outputs": [
+                "debug\\QString_7AAC4DB5EAB58B40.ifc.dt.module.json",
+                "debug\\QString_7AAC4DB5EAB58B40.ifc.dt.d.json",
+                "debug\\QString.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QString",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qstring",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

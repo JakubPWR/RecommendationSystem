@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QRegularExpression.obj",
+            "outputs": [
+                "debug\\QRegularExpression_F1012298A5D64E21.ifc.dt.module.json",
+                "debug\\QRegularExpression_F1012298A5D64E21.ifc.dt.d.json",
+                "debug\\QRegularExpression.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QRegularExpression",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qregularexpression",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
