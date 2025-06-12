@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qdebug_OOWET03GTP32A3Q5.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qdebug_OOWET03GTP32A3Q5.module.json",
+                "debug\\qdebug_OOWET03GTP32A3Q5.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdebug",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdebug",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

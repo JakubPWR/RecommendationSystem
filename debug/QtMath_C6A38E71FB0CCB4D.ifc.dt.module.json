@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QtMath.obj",
+            "outputs": [
+                "debug\\QtMath_C6A38E71FB0CCB4D.ifc.dt.module.json",
+                "debug\\QtMath_C6A38E71FB0CCB4D.ifc.dt.d.json",
+                "debug\\QtMath.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QtMath",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qtmath",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

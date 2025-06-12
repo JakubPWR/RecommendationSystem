@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qcoreapplication_JY4Y6QH7EQ293OI7.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qcoreapplication_JY4Y6QH7EQ293OI7.module.json",
+                "debug\\qcoreapplication_JY4Y6QH7EQ293OI7.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qcoreapplication",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qcoreapplication",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

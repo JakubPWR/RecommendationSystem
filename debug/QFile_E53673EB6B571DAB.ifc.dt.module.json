@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QFile.obj",
+            "outputs": [
+                "debug\\QFile_E53673EB6B571DAB.ifc.dt.module.json",
+                "debug\\QFile_E53673EB6B571DAB.ifc.dt.d.json",
+                "debug\\QFile.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QFile",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qfile",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

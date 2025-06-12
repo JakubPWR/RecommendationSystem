@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QSqlRecord.obj",
+            "outputs": [
+                "debug\\QSqlRecord_D1AEFB9EE6312929.ifc.dt.module.json",
+                "debug\\QSqlRecord_D1AEFB9EE6312929.ifc.dt.d.json",
+                "debug\\QSqlRecord.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtSql\\QSqlRecord",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtsql\\qsqlrecord",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

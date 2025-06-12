@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QDebug.obj",
+            "outputs": [
+                "debug\\QDebug_CBDE8A7F3C92EA90.ifc.dt.module.json",
+                "debug\\QDebug_CBDE8A7F3C92EA90.ifc.dt.d.json",
+                "debug\\QDebug.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QDebug",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdebug",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

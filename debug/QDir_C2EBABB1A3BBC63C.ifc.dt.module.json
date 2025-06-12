@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QDir.obj",
+            "outputs": [
+                "debug\\QDir_C2EBABB1A3BBC63C.ifc.dt.module.json",
+                "debug\\QDir_C2EBABB1A3BBC63C.ifc.dt.d.json",
+                "debug\\QDir.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QDir",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdir",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

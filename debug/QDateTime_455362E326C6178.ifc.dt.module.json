@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QDateTime.obj",
+            "outputs": [
+                "debug\\QDateTime_455362E326C6178.ifc.dt.module.json",
+                "debug\\QDateTime_455362E326C6178.ifc.dt.d.json",
+                "debug\\QDateTime.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QDateTime",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdatetime",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,24 +1,25 @@
+import RecommendationEngine;
+import Logger;
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "recommendationengine.h"
-#include "logger.h"
-
 
 #include <QSqlRecord>
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QMessageBox>
 #include <QDebug>
-#include <algorithm>
 #include <QFileDialog>
 #include <QFile>
 #include <QTextStream>
 #include <QtConcurrent>
 #include <QFutureWatcher>
+#include <QThread>
+#include <QListWidgetItem>
+#include <ranges>
+#include <algorithm>
 
-
-
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
@@ -29,11 +30,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     if (!db.open()) {
         QMessageBox::critical(this, "Database Error", "Failed to connect to database: " + db.lastError().text());
-        Logger::log("Database connection FAILED: " + db.lastError().text()); 
+        Logger::log("Database connection FAILED: " + db.lastError().text());
     }
     else {
-        Logger::log("Database connected successfully."); 
+        Logger::log("Database connected successfully.");
     }
+
     completerModel = new QStringListModel(this);
     completer = new QCompleter(completerModel, this);
     completer->setCaseSensitivity(Qt::CaseInsensitive);
@@ -48,7 +50,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->lineEdit, &QLineEdit::textEdited, this, &MainWindow::onMovieTitleChanged);
     connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_pushButton_clicked);
     connect(ui->exportButton, &QPushButton::clicked, this, &MainWindow::on_exportButton_clicked);
-
 }
 
 MainWindow::~MainWindow()
@@ -61,6 +62,7 @@ void MainWindow::on_pushButton_clicked()
 {
     QString searchText = ui->lineEdit->text().trimmed();
     QString movieNumber = ui->movieNumber->text();
+
     if (searchText.isEmpty()) {
         QMessageBox::warning(this, "Input Error", "Please enter a movie title.");
         Logger::log("Recommendation attempt with empty movie title.");
@@ -69,17 +71,14 @@ void MainWindow::on_pushButton_clicked()
 
     Logger::log("User requested recommendations for: " + searchText);
 
-    // Disable the button to prevent re-entrance
     ui->pushButton->setEnabled(false);
     ui->plainTextEdit->setPlainText("Generating recommendations, please wait...");
 
-    // Capture the search text and database pointer
     auto future = QtConcurrent::run([=]() -> QString {
-        // Generate a unique name for the thread's database connection
         QString connectionName = QString("thread_%1").arg((quintptr)QThread::currentThreadId());
         QSqlDatabase threadDb = QSqlDatabase::contains(connectionName)
-                                    ? QSqlDatabase::database(connectionName)
-                                    : QSqlDatabase::addDatabase("QSQLITE", connectionName);
+            ? QSqlDatabase::database(connectionName)
+            : QSqlDatabase::addDatabase("QSQLITE", connectionName);
 
         threadDb.setDatabaseName("C:/Users/MrPie/OneDrive/Desktop/PK4/Recommendations/movie.db");
         if (!threadDb.open()) {
@@ -102,15 +101,12 @@ void MainWindow::on_pushButton_clicked()
             }
         }
 
-        if (!found)
-        {
+        if (!found) {
             Logger::log("Movie not found in DB: " + searchText);
             return "Movie not found.";
         }
-            
 
-        if (baseOverview.isEmpty())
-        {
+        if (baseOverview.isEmpty()) {
             Logger::log("Movie found but has no overview: " + searchText);
             return "Selected movie has no overview.";
         }
@@ -151,29 +147,29 @@ void MainWindow::on_pushButton_clicked()
         QString result = "Top Recommendations by Semantic Similarity:\n";
         for (int i = 0; i < finalRecs.size(); ++i) {
             result += QString("%1. %2 (Similarity Score: %3)\n")
-            .arg(i + 1)
+                .arg(i + 1)
                 .arg(finalRecs[i].title)
                 .arg(finalRecs[i].score, 0, 'f', 2);
         }
+
         Logger::log("Recommendations generated successfully for: " + searchText);
-        // Clean up thread-specific database connection after finishing
         QSqlDatabase::removeDatabase(connectionName);
 
         return result;
-    });
+        });
 
-    auto *watcher = new QFutureWatcher<QString>(this);
+    auto* watcher = new QFutureWatcher<QString>(this);
     connect(watcher, &QFutureWatcher<QString>::finished, this, [=]() {
         QString result = watcher->result();
         ui->plainTextEdit->setPlainText(result);
         ui->pushButton->setEnabled(true);
         watcher->deleteLater();
-    });
+        });
+
     watcher->setFuture(future);
 }
 
-
-void MainWindow::onMovieTitleChanged(const QString &text)
+void MainWindow::onMovieTitleChanged(const QString& text)
 {
     ui->movieListWidget->clear();
 
@@ -201,7 +197,7 @@ void MainWindow::onMovieTitleChanged(const QString &text)
     ui->movieListWidget->setVisible(ui->movieListWidget->count() > 0);
 }
 
-void MainWindow::onSuggestionClicked(QListWidgetItem *item)
+void MainWindow::onSuggestionClicked(QListWidgetItem* item)
 {
     ui->lineEdit->setText(item->text());
     ui->movieListWidget->setVisible(false);
@@ -210,8 +206,8 @@ void MainWindow::onSuggestionClicked(QListWidgetItem *item)
 void MainWindow::on_exportButton_clicked()
 {
     QString fileName = QFileDialog::getSaveFileName(this,
-                                                    tr("Save Recommendations"), "",
-                                                    tr("Text Files (*.txt);;All Files (*)"));
+        tr("Save Recommendations"), "",
+        tr("Text Files (*.txt);;All Files (*)"));
 
     if (fileName.isEmpty())
         return;
@@ -219,7 +215,7 @@ void MainWindow::on_exportButton_clicked()
     QFile file(fileName);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         QMessageBox::warning(this, tr("File Error"),
-                             tr("Cannot write to file: %1").arg(file.errorString()));
+            tr("Cannot write to file: %1").arg(file.errorString()));
         Logger::log("Failed to export recommendations to file: " + file.errorString());
         return;
     }
@@ -231,5 +227,3 @@ void MainWindow::on_exportButton_clicked()
     Logger::log("Exported recommendations to file: " + fileName);
     QMessageBox::information(this, tr("Success"), tr("Recommendations exported successfully."));
 }
-
-

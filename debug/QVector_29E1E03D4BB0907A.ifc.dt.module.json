@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\QVector.obj",
+            "outputs": [
+                "debug\\QVector_29E1E03D4BB0907A.ifc.dt.module.json",
+                "debug\\QVector_29E1E03D4BB0907A.ifc.dt.d.json",
+                "debug\\QVector.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Qt\\6.9.0\\msvc2022_64\\include\\QtCore\\QVector",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qvector",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

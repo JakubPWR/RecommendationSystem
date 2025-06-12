@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "debug\\qdatetime_9YTI9X91K6QVC8AO.obj",
+            "outputs": [
+                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "debug\\qdatetime_9YTI9X91K6QVC8AO.module.json",
+                "debug\\qdatetime_9YTI9X91K6QVC8AO.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdatetime",
+                    "source-path": "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qdatetime",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
