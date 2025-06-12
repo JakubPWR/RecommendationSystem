@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\mrpie\\onedrive\\desktop\\pk4\\recommendations_vs\\logger.ixx",
+        "Source": "c:\\users\\mrpie\\source\\repos\\recommendationsystem2\\logger.ixx",
         "ProvidedModule": "Logger",
         "Includes": [
             "c:\\qt\\6.9.0\\msvc2022_64\\include\\qtcore\\qstring",

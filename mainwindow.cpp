@@ -18,6 +18,7 @@ import Logger;
 #include <QListWidgetItem>
 #include <ranges>
 #include <algorithm>
+#include <QDir>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -25,8 +26,9 @@ MainWindow::MainWindow(QWidget* parent)
 {
     ui->setupUi(this);
 
+    QString dbPath = QCoreApplication::applicationDirPath() + "/movie.db";
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/MrPie/OneDrive/Desktop/PK4/Recommendations/movie.db");
+    db.setDatabaseName(dbPath);
 
     if (!db.open()) {
         QMessageBox::critical(this, "Database Error", "Failed to connect to database: " + db.lastError().text());

@@ -12,7 +12,7 @@
             "provides": [
                 {
                     "logical-name": "RecommendationEngine",
-                    "source-path": "c:\\users\\mrpie\\onedrive\\desktop\\pk4\\recommendations_vs\\recommendationengine.ixx",
+                    "source-path": "c:\\users\\mrpie\\source\\repos\\recommendationsystem2\\recommendationengine.ixx",
                     "is-interface": true
                 }
             ],

@@ -3,8 +3,8 @@
    Qt: 6.9.0
   Trwa skanowanie źródeł pod kątem zależności modułów...
   Trwa kompilowanie…
-  logger.ixx
   recommendationengine.ixx
+  logger.ixx
 logger.ixx(3,17): fatal  error C1001: Wewnętrzny błąd kompilatora.
   (plik kompilatora „msc1.cpp”, wiersz 1533)
    Aby obejść ten problem, spróbuj uprościć lub zmienić program w pobliżu miejsc wymienionych na liście powyżej.

@@ -5,7 +5,7 @@
         {
             "primary-output": "debug\\qdebug_OOWET03GTP32A3Q5.obj",
             "outputs": [
-                "C:\\Users\\MrPie\\OneDrive\\Desktop\\PK4\\Recommendations_vs\\debug\\vc143.pdb",
+                "C:\\Users\\MrPie\\source\\repos\\RecommendationSystem2\\debug\\vc143.pdb",
                 "debug\\qdebug_OOWET03GTP32A3Q5.module.json",
                 "debug\\qdebug_OOWET03GTP32A3Q5.ifc"
             ],

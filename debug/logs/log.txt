@@ -29,3 +29,8 @@
 2025-06-11 16:16:55 | User requested recommendations for: The Godfather: Part II
 2025-06-11 16:16:55 | Recommendations generated successfully for: The Godfather: Part II
 2025-06-11 16:16:55 | Recommendations generated successfully for: The Godfather: Part II
+2025-06-12 11:35:57 | Database connected successfully.
+2025-06-12 11:36:05 | User requested recommendations for: The Lord of the Rings: The Return of the King
+2025-06-12 11:36:05 | User requested recommendations for: The Lord of the Rings: The Return of the King
+2025-06-12 11:36:05 | Recommendations generated successfully for: The Lord of the Rings: The Return of the King
+2025-06-12 11:48:10 | Database connected successfully.
