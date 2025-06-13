@@ -67,9 +67,6 @@ A cross-platform desktop application built using **Qt (C++/QML)** that provides 
 ## 📸 Screenshots
 https://github.com/user-attachments/assets/b8141826-bb03-4a3e-bd9d-c16daffdb550
 ---
-![image](https://github.com/user-attachments/assets/7889eab4-dbf9-43e1-b13d-6c67be61fee3)
-
----
 ## 🧾 License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
