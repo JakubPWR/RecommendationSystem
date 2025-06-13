@@ -1,3 +1,6 @@
+https://github.com/user-attachments/assets/b8141826-bb03-4a3e-bd9d-c16daffdb550
+
+
 # 🎬 Qt Movie Recommendation System
 
 A cross-platform desktop application built using **Qt (C++/QML)** that provides intelligent movie recommendations based on a selected movie's content and metadata. The system leverages both **attribute-based scoring** (genres, cast, director, release year, IMDB rating) and **semantic similarity** of movie overviews using cosine similarity on term frequency vectors.
@@ -65,7 +68,7 @@ A cross-platform desktop application built using **Qt (C++/QML)** that provides 
 ---
 
 ## 📸 Screenshots
-https://github.com/user-attachments/assets/b8141826-bb03-4a3e-bd9d-c16daffdb550
+
 https://github.com/user-attachments/assets/1f9cc737-cab6-42c6-9f60-f3e0c6a8a035
 
 
